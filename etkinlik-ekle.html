@@ -1,49 +1,57 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
+    <meta charset="UTF-8">
     <title>Etkinlik Ekle</title>
 </head>
 <body>
 
     <header>
-        <h1>Etkinlik Ekle</h1>
+        <h1>Kampüs Etkinlikleri</h1>
         <nav>
-            <a href="etkinlikler.html">Ana Sayfa</a>
-            <a href="etkinlik-detay.html">Etkinlikler</a>
-            <a href="etkinlik-ekle.html">Detay Ekle</a>
-
+            <a href="index.html">Ana Sayfa</a> | 
+            <a href="etkinlikler.html">Etkinlikler</a> | 
+            <a href="etkinlik-detay.html">Detay</a> | 
+            <a href="etkinlik-ekle.html">Etkinlik Ekle</a> 
         </nav>
     </header>
 
     <main>
+        <h1>Etkinlik Ekle</h1>
+
         <form action="#" method="post">
             <p>
-                <label for="etkinlik-adi">Etkinlik Adı</label><br>
-                <input type="text" id="etkinlik-adi" name="etkinlik-adi" required>
+                <label for="ad">Etkinlik Adı:</label><br>
+                <input type="text" id="ad" name="ad" required>
             </p>
 
             <p>
-                <label for="kategori">Kategori</label><br>
-                <select id="kategori" name="kategori" required>
-                    <option value="Seminer">Seminer</option>
-                    <option value="Atolye">Atölye</option>
-                    <option value="Konferans">Konferans</option>
+                <label for="kategori">Kategori:</label><br>
+                <select id="kategori" name="kategori">
+                    <option value="seminer">Seminer</option>
+                    <option value="atolye">Atölye</option>
+                    <option value="konferans">Konferans</option>
                 </select>
             </p>
 
             <p>
-                <label for="tarih-saat">Tarih / Saat</label><br>
-                <input type="datetime-local" id="tarih-saat" name="tarih-saat" required>
+                <label for="tarih">Tarih/saat<Tarih>
+                <saat></saat></label><br>
+                <input type="date" ty   id="tarih" name="tarih" required>
+                <input type="time" id="saat" name="saat" required>
             </p>
 
             <p>
-                <label for="aciklama">Açıklama</label><br>
-                <textarea id="aciklama" name="aciklama" rows="4" cols="30"></textarea>
+                <label for="yer">Yer:</label><br>
+                <input type="text" id="yer" name="yer" required>
             </p>
 
             <p>
-                <button type="submit">Kaydet</button>
+                <label for="aciklama">Açıklama:</label><br>
+                <textarea id="aciklama" name="aciklama" rows="4" cols="40"></textarea>
             </p>
+
+            <button type="submit">Kaydet</button>
         </form>
     </main>
 
